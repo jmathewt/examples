@@ -1,4 +1,4 @@
-package com.interview.solutions.coffeemaker;
+package com.question.solutions.concurrency.coffeemaker;
 
 public class CoffeMakerProcessor {
 	

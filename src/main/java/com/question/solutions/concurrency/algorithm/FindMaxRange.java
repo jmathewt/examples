@@ -1,4 +1,4 @@
-package com.interview.solutions.algorithm;
+package com.question.solutions.concurrency.algorithm;
 
 import java.util.ArrayList;
 import java.util.HashMap;

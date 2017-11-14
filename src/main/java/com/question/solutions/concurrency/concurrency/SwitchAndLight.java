@@ -1,4 +1,4 @@
-package com.interview.solutions.concurrency;
+package com.question.solutions.concurrency.concurrency;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
