@@ -1,4 +1,4 @@
-package com.jthomas.algorithm;
+package com.interview.solutions.algorithm;
 
 import java.util.ArrayList;
 import java.util.HashMap;

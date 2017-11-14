@@ -1,4 +1,4 @@
-package com.jthomas.concurrency;
+package com.interview.solutions.concurrency;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-public class JthomasExecutorService {
+public class ExecutorService {
 	
 	public static void main(String... args) throws InterruptedException, ExecutionException {
 		ExecutorService executorService = Executors.newFixedThreadPool(10);

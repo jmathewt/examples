@@ -1,4 +1,4 @@
-package com.jthomas.coffeemaker;
+package com.interview.solutions.coffeemaker;
 
 public class CupHolder {
 	

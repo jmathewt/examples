@@ -1,4 +1,4 @@
-package com.jthomas.search;
+package com.interview.solutions.search;
 
 import java.util.HashSet;
 import java.util.Random;
