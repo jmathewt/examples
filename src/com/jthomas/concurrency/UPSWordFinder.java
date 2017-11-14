@@ -34,16 +34,23 @@ public class UPSWordFinder {
 		int count = 0;
 		
 		while((line = reader.readLine()) != null) { //execute batches of 10 threads sequentially after each batch is successful
-			if(futures.size() == 10) {
-				for(Future future : futures) {
-					if(!future.isDone())
-						future.get();
+			try {
+				if(futures.size() == 10) {
+					for(Future future : futures) {
+						if(!future.isDone())
+							future.get();
+					}
+					futures.clear();
+				}else {
+					Future<Boolean> future = executor.submit(new FileWriterInfo(line, upsFile, nonUPSFile, fileWriterUPSNonUPS));
+					futures.add(future);
 				}
+			}finally {
+				if(futures.size() > 0)
+					count += 1;
 				futures.clear();
-			}else {
-				Future<Boolean> future = executor.submit(new FileWriterInfo(line, upsFile, nonUPSFile, fileWriterUPSNonUPS));
-				futures.add(future);
 			}
+			
 		}
 		
 		System.out.println("Thread Service Called: " + count);

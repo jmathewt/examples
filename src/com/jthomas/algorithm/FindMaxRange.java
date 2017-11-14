@@ -1,4 +1,4 @@
-package com.jthomas.hbo;
+package com.jthomas.algorithm;
 
 import java.util.ArrayList;
 import java.util.HashMap;

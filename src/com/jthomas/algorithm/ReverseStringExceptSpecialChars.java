@@ -1,4 +1,4 @@
-package com.jthomas.hbo;
+package com.jthomas.algorithm;
 
 import java.util.Arrays;
 import java.util.List;
