@@ -1,4 +1,4 @@
-package com.question.solutions.concurrency.coffeemaker;
+package com.question.solutions.coffeemaker;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;

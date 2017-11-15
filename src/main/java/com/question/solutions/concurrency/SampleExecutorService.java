@@ -1,4 +1,4 @@
-package com.question.solutions.concurrency.concurrency;
+package com.question.solutions.concurrency;
 
 import java.util.ArrayList;
 import java.util.List;

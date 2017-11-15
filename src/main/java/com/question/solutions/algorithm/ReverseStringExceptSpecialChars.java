@@ -1,4 +1,4 @@
-package com.question.solutions.concurrency.algorithm;
+package com.question.solutions.algorithm;
 
 import java.util.Arrays;
 import java.util.List;

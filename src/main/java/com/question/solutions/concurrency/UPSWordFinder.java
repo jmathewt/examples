@@ -1,4 +1,4 @@
-package com.question.solutions.concurrency.concurrency;
+package com.question.solutions.concurrency;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

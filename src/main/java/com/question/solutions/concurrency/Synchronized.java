@@ -1,4 +1,4 @@
-package com.question.solutions.concurrency.concurrency;
+package com.question.solutions.concurrency;
 
 import java.util.Random;
 import java.util.concurrent.Callable;

@@ -1,4 +1,4 @@
-package com.question.solutions.concurrency.coffeemaker;
+package com.question.solutions.coffeemaker;
 
 public class FilterPouch{
 	

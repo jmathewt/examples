@@ -1,4 +1,4 @@
-package com.question.solutions.concurrency.search;
+package com.question.solutions.search;
 
 import java.util.HashSet;
 import java.util.Random;
