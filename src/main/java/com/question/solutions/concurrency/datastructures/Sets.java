@@ -1,4 +1,4 @@
-package com.jthomas.datastructures;
+package com.question.solutions.concurrency.datastructures;
 
 import java.util.Random;
 import java.util.Set;

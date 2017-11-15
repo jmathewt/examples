@@ -1,4 +1,4 @@
-package com.jthomas.concurrency;
+package com.question.solutions.concurrency.concurrency;
 
 import java.io.BufferedWriter;
 import java.io.File;

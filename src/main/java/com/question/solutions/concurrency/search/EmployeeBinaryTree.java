@@ -1,4 +1,4 @@
-package com.jthomas.search;
+package com.question.solutions.concurrency.search;
 
 import java.util.Collection;
 
