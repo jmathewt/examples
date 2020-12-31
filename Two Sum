@@ -1,0 +1,58 @@
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+
+In Python:
+
+class Solution(object):
+    """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+    def twoSum(self, nums, target):
+        firstIndex=0
+        nextIndex=0
+        lookup={}
+        for i in range(len(nums)):
+            firstIndex=i
+            valToFind=target-nums[i]
+            if(len(lookup)==0):
+                for j in range(firstIndex+1, len(nums)):
+                    if(nums[j]==valToFind):
+                        return [i, j]
+                    lookup[nums[j]] = j
+            elif (valToFind in lookup and lookup[valToFind] > i):
+                return [i, lookup[valToFind]]
+                
+                
+                
+in Java:
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        
+        int firstIndex=0;
+        int nextIndex=0;
+        Map<Integer, Integer> lookUp=new HashMap<>();
+        for(int i=0; i<nums.length; i++){
+            firstIndex=i;
+            int valToFind=target-nums[i];
+            if(lookUp.size()==0){
+                for(int j=firstIndex + 1; j < nums.length; j++){
+                    if(nums[j] == valToFind){
+                        return new int[]{i, j};
+                    }
+                    lookUp.put(nums[j], j);
+                }
+            }else if(lookUp.get(valToFind) != null && lookUp.get(valToFind) > i){
+                return new int[]{i, lookUp.get(valToFind)};
+            }
+        }
+        return null;
+    }
+}
+        
