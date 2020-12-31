@@ -14,19 +14,17 @@ class Solution(object):
         :rtype: List[int]
         """
     def twoSum(self, nums, target):
-        firstIndex=0
-        nextIndex=0
         lookup={}
         for i in range(len(nums)):
-            firstIndex=i
             valToFind=target-nums[i]
             if(len(lookup)==0):
-                for j in range(firstIndex+1, len(nums)):
+                for j in range(i+1, len(nums)):
                     if(nums[j]==valToFind):
                         return [i, j]
                     lookup[nums[j]] = j
             elif (valToFind in lookup and lookup[valToFind] > i):
                 return [i, lookup[valToFind]]
+        
                 
                 
                 
